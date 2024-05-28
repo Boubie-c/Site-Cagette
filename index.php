@@ -12,7 +12,7 @@
     <body>
         <header>
             <div class="container">
-                <?php require_once(__DIR__.'/Header.php'); ?> 
+                <?php require_once(__DIR__.'/header.php'); ?> 
             </div>
         </header>
     <main>
@@ -34,15 +34,15 @@
         <section>
             <h5>Nos réalisations</h5>
                 <div class="grid-container">
-                    <img class="grid-item1" src="Images/gateau1.jpg" alt="Gateau_chocolat" title="Gâteau au chocolat">
-                    <img class="grid-item2" src="Images/gateau2.jpg" alt="Cupcake_chocolat" title="Cupcake au chocolat">  
-                    <img class="grid-item3" src="Images/gateau3.jpg" alt="Birthday_cake" title="Gateau d'anniversaire">
-                    <img class="grid-item4" src="Images/gateau4.jpg" alt="Gateau_cookie_fraise" title="Gâteau assorti">
+                    <img class="grid-item1" src="Images/gateau1.jpg" alt="Gateau au chocolat" title="Gâteau au chocolat">
+                    <img class="grid-item2" src="Images/gateau2.jpg" alt="Cupcake au chocolat" title="Cupcake au chocolat">  
+                    <img class="grid-item3" src="Images/gateau3.jpg" alt="Birthday cake" title="Gateau d'anniversaire">
+                    <img class="grid-item4" src="Images/gateau4.jpg" alt="Gateau cookie fraise" title="Gâteau assorti">
                 </div>
         </section>
     </main>
     <footer>
-            <?php require_once(__DIR__.'/Footer.php'); ?> 
+            <?php require_once(__DIR__.'/footer.php'); ?> 
     </footer>
 </body>
 </html>
