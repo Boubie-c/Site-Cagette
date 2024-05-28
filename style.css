@@ -1,0 +1,111 @@
+body {
+    padding: 50px;
+    margin: auto;
+    background-image: linear-gradient(to right, #ee9ca7, #ffdde1);
+    background-size: 100%;
+    background-position: center;
+}
+.container{
+    border-width:5px;
+    border-style:dashed;
+    border-color: #d00000;
+    border-radius: 33% 33% 10% 10% / 45% 45% 25% 25%; 
+    background-color:white;
+    font-size: 2em;
+    
+} 
+nav{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: start;
+    align-items: center;
+    gap: 5px;
+    padding:15px;
+}
+h1{
+    color:#ee9ca7;
+    font-family: 'Sevillana', sans-serif;
+    text-decoration:underline;
+    font-size: 2em;
+    margin:auto;
+    text-shadow: 1px 2px 4px rgba(30, 30, 31, 0.521);
+}
+h2,h3,H4,h5{
+    font-family: 'Sevillana', sans-serif;
+    color: white;
+    font-size: 2em;
+    text-align: center;
+    text-decoration: underline;
+}
+p{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: #d00000;
+    Font-family: 'Montserrat', sans-serif;
+}
+a:focus, a:active {
+    outline: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+.grid-container{
+    img{
+        height: 300px;
+        width: 200px;
+        display:block;
+        border-radius: 10% 10% 10% 10% / 10% 10% 10% 10%;
+        max-width:100%;
+    }
+    img:hover{
+        filter:brightness(120%)
+    }
+    display:grid;
+    grid-template-columns:250px 250px 250px 250px;
+    gap: 35px;
+    padding: 45px;
+    position:relative;
+    justify-content:center;
+    align-items:center;
+}
+
+   footer {
+    border-width:5px;
+    border-style:dashed;
+    border-color: #d00000;
+    border-radius: 45% 45% 25% 25% / 33% 33% 10% 10%;
+    background-color:white;
+    font-size: 2em;
+    display:flex;
+    flex-direction:column-reverse;
+    justify-content:center;
+    align-items:center;
+    align-content:center;
+    flex-wrap:wrap;
+    padding:15px;
+}
+img{
+    max-width: 100%;
+    height:auto;
+}
+@media (max-width: 480px) {
+    .container{
+        border-radius: 33% 33% 10% 10% / 7% 7% 7% 7%; 
+        display:flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .grid-container{
+        grid-template-columns: 150px 150px;
+    }
+}
+@media (min-width: 480px)and (max-width:1280px) {
+    .grid-container{
+        grid-template-columns: 250px 250px;
+    }
+}
