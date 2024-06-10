@@ -1,7 +1,7 @@
 body {
     padding: 50px;
     margin: auto;
-    background-image: linear-gradient(to right, #ee9ca7, #ffdde1);
+    background: radial-gradient(circle, hsla(353, 100%, 93%, 1) 0%, hsla(353, 100%, 93%, 1) 44%, hsla(0, 0%, 100%, 1) 100%);
     background-size: 100%;
     background-position: center;
 }
@@ -12,6 +12,9 @@ body {
     border-radius: 33% 33% 10% 10% / 45% 45% 25% 25%; 
     background-color:white;
     font-size: 2em;
+    text-align: center;
+    width: 55%;
+    margin: 0 auto;
     
 } 
 nav{
@@ -34,14 +37,17 @@ h1{
 h2,h3,H4,h5{
     font-family: 'Sevillana', sans-serif;
     color: white;
-    font-size: 2em;
+    font-size: 3em;
     text-align: center;
     text-decoration: underline;
+    text-shadow: 2px 2px 3px rgba(30, 30, 31, 0.521)
 }
 p{
     font-family: 'Montserrat', sans-serif;
     color: white;
     text-align: center;
+    font-size: 1.5em;
+    text-shadow: 1px 2px 4px rgba(30, 30, 31, 0.521);
 }
 a{
     text-decoration: none;
@@ -63,7 +69,7 @@ a:hover{
         max-width:100%;
     }
     img:hover{
-        filter:brightness(120%)
+        filter:brightness(135%)
     }
     display:grid;
     grid-template-columns:250px 250px 250px 250px;
@@ -78,16 +84,17 @@ a:hover{
     border-width:5px;
     border-style:dashed;
     border-color: #d00000;
-    border-radius: 45% 45% 25% 25% / 33% 33% 10% 10%;
+    border-radius: 40% 40% 35% 35% / 35% 35% 40% 40%;
     background-color:white;
     font-size: 2em;
-    display:flex;
-    flex-direction:column-reverse;
-    justify-content:center;
-    align-items:center;
-    align-content:center;
-    flex-wrap:wrap;
-    padding:15px;
+    width: 25%;
+    height: 100px;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 15px;
+
 }
 img{
     max-width: 100%;
@@ -108,4 +115,22 @@ img{
     .grid-container{
         grid-template-columns: 250px 250px;
     }
+}
+.grid-container-photo{
+    img{
+        height: 425px;
+        width: 350px;
+        border-radius: 10% 10% 10% 10% / 10% 10% 10% 10%;
+        max-width: 100%;
+        cursor: pointer;
+        transition: transform 0.5 ease-in; 
+    }
+    img:hover{
+        transform:scale(2);
+    }
+    margin:auto;
+    display:grid;
+    grid-template-columns: 350px 350px 350px;
+    gap: 50px;
+    justify-content: center;
 }
